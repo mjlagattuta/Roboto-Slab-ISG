@@ -1,29 +1,29 @@
-cp RobotoSlab.glyphs RobotoSlabBuild.glyphs
+ttx RobotoSlabISGLight-Regular.ttf
+ttx RobotoSlabISGLight-Bold.ttf
+ttx RobotoSlabISGDark-Regular.ttf
+ttx RobotoSlabISGDark-Bold.ttf
 
-python tools/fix-glyph-names.py RobotoSlabBuild.glyphs
+rm -rf RobotoSlabISGLight-Regular.ttf
+rm -rf RobotoSlabISGLight-Bold.ttf
+rm -rf RobotoSlabISGDark-Regular.ttf
+rm -rf RobotoSlabISGDark-Bold.ttf
 
-fontmake -o variable -g RobotoSlabBuild.glyphs
+cat RobotoSlabISGLight-Regular.ttx | tr '\n' '\r' | sed -e "s,<STAT>.*<\/STAT>,$(cat tools/patchRegular.xml | tr '\n' '\r')," | tr '\r' '\n' > ../fonts/RobotoSlabISGLight-Regular.ttx
+cat RobotoSlabISGLight-Bold.ttx | tr '\n' '\r' | sed -e "s,<STAT>.*<\/STAT>,$(cat tools/patchBold.xml | tr '\n' '\r')," | tr '\r' '\n' > ../fonts/RobotoSlabISGLight-Bold.ttx
+cat RobotoSlabISGDark-Regular.ttx | tr '\n' '\r' | sed -e "s,<STAT>.*<\/STAT>,$(cat tools/patchRegular.xml | tr '\n' '\r')," | tr '\r' '\n' > ../fonts/RobotoSlabISGDark-Regular.ttx
+cat RobotoSlabISGDark-Bold.ttx | tr '\n' '\r' | sed -e "s,<STAT>.*<\/STAT>,$(cat tools/patchBold.xml | tr '\n' '\r')," | tr '\r' '\n' > ../fonts/RobotoSlabISGDark-Bold.ttx
 
-rm -rf master_ufo
-rm -rf RobotoSlabBuild.glyphs
+rm -rf RobotoSlabISGLight-Regular.ttx
+rm -rf RobotoSlabISGLight-Bold.ttx
+rm -rf RobotoSlabISGDark-Regular.ttx
+rm -rf RobotoSlabISGDark-Bold.ttx
 
-cd variable_ttf
+ttx ../fonts/RobotoSlabISGLight-Regular.ttx
+ttx ../fonts/RobotoSlabISGLight-Bold.ttx
+ttx ../fonts/RobotoSlabISGDark-Regular.ttx
+ttx ../fonts/RobotoSlabISGDark-Bold.ttx
 
-gftools fix-nonhinting RobotoSlab-VF.ttf RobotoSlab-VF.ttf
-gftools fix-dsig --autofix RobotoSlab-VF.ttf
-gftools fix-gasp RobotoSlab-VF.ttf
-
-ttx RobotoSlab-VF.ttf
-
-rm -rf RobotoSlab-VF.ttf
-rm -rf RobotoSlab-VF-backup-fonttools-prep-gasp.ttf
-
-cd ..
-
-cat variable_ttf/RobotoSlab-VF.ttx | tr '\n' '\r' | sed -e "s,<STAT>.*<\/fvar>,$(cat tools/patch.xml | tr '\n' '\r')," | tr '\r' '\n' > RobotoSlab-VF.ttx
-
-rm -rf variable_ttf
-
-ttx RobotoSlab-VF.ttx
-
-rm -rf RobotoSlab-VF.ttx
+rm -rf ../fonts/RobotoSlabISGLight-Regular.ttx
+rm -rf ../fonts/RobotoSlabISGLight-Bold.ttx
+rm -rf ../fonts/RobotoSlabISGDark-Regular.ttx
+rm -rf ../fonts/RobotoSlabISGDark-Bold.ttx

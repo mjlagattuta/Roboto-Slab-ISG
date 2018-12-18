@@ -1,0 +1,22 @@
+  <STAT>
+    <Version value="0x00010000"/>
+    <DesignAxisRecordSize value="8"/>
+    <!-- DesignAxisCount=1 -->
+    <DesignAxisRecord>
+      <Axis index="0">
+        <AxisTag value="wght"/>
+        <AxisNameID value="256"/>  <!-- Weight -->
+        <AxisOrdering value="0"/>
+      </Axis>
+    </DesignAxisRecord>
+    <!-- AxisValueCount=1 -->
+    <AxisValueArray>
+      <AxisValue index="0" Format="3">
+        <AxisIndex value="0"/>
+        <Flags value="0"/>
+        <ValueNameID value="257"/>  <!-- Bold -->
+        <Value value="700.0"/>
+        <LinkedValue value="400.0"/>
+      </AxisValue>
+    </AxisValueArray>
+  </STAT>
