@@ -1,7 +1,8 @@
 {
 .appVersion = "1141";
 DisplayStrings = (
-"Roboto Slab\012ABCDEFGHIJKLMNOPQRSTUVWXYZ\012/a.sc/b.sc/c.sc/d.sc/e.sc/f.sc/g.sc/h.sc/i.sc/j.sc/k.sc/l.sc/m.sc/n.sc/o.sc/p.sc/q.sc/r.sc/s.sc/t.sc/u.sc/v.sc/w.sc/x.sc/y.sc/z.sc \012abcdefghijklmnopqrstuvwxyz\0121234567890 &"
+"Roboto Slab\012ABCDEFGHIJKLMNOPQRSTUVWXYZ\012/a.sc/b.sc/c.sc/d.sc/e.sc/f.sc/g.sc/h.sc/i.sc/j.sc/k.sc/l.sc/m.sc/n.sc/o.sc/p.sc/q.sc/r.sc/s.sc/t.sc/u.sc/v.sc/w.sc/x.sc/y.sc/z.sc \012abcdefghijklmnopqrstuvwxyz\0121234567890 &",
+"/blackLargeCircle/blackLargeSquare"
 );
 classes = (
 {
@@ -77,14 +78,14 @@ Tag = wght;
 );
 },
 {
-name = "Variation Font Origin";
-value = "B06AEEA2-953E-4FA5-BFB1-0445B6E4B274";
+name = "Name Table Entry";
+value = "256 3 1 1033; Weight";
 }
 );
 date = "2018-08-01 19:41:13 +0000";
 designer = Google;
 designerURL = "Christian Robertson";
-familyName = "Roboto Slab ISG Bold";
+familyName = "Roboto Slab ISG";
 featurePrefixes = (
 {
 automatic = 1;
@@ -121955,6 +121956,138 @@ width = 1142;
 unicode = 212E;
 },
 {
+glyphname = blackLargeCircle;
+lastChange = "2018-10-26 01:21:43 +0000";
+layers = (
+{
+layerId = "0331963E-C1C8-4E93-A463-84B984C1D75E";
+paths = (
+{
+closed = 1;
+nodes = (
+"1245 0 OFFCURVE",
+"1555 308 OFFCURVE",
+"1555 700 CURVE SMOOTH",
+"1555 1092 OFFCURVE",
+"1245 1400 OFFCURVE",
+"855 1400 CURVE SMOOTH",
+"465 1400 OFFCURVE",
+"155 1092 OFFCURVE",
+"155 700 CURVE SMOOTH",
+"155 308 OFFCURVE",
+"465 0 OFFCURVE",
+"855 0 CURVE SMOOTH"
+);
+}
+);
+width = 1710;
+},
+{
+layerId = "B06AEEA2-953E-4FA5-BFB1-0445B6E4B274";
+paths = (
+{
+closed = 1;
+nodes = (
+"1245 0 OFFCURVE",
+"1555 308 OFFCURVE",
+"1555 700 CURVE SMOOTH",
+"1555 1092 OFFCURVE",
+"1245 1400 OFFCURVE",
+"855 1400 CURVE SMOOTH",
+"465 1400 OFFCURVE",
+"155 1092 OFFCURVE",
+"155 700 CURVE SMOOTH",
+"155 308 OFFCURVE",
+"465 0 OFFCURVE",
+"855 0 CURVE SMOOTH"
+);
+}
+);
+width = 1710;
+},
+{
+layerId = "55372407-EEEC-4390-8B77-FB5958F23D2B";
+paths = (
+{
+closed = 1;
+nodes = (
+"1245 0 OFFCURVE",
+"1555 308 OFFCURVE",
+"1555 700 CURVE SMOOTH",
+"1555 1092 OFFCURVE",
+"1245 1400 OFFCURVE",
+"855 1400 CURVE SMOOTH",
+"465 1400 OFFCURVE",
+"155 1092 OFFCURVE",
+"155 700 CURVE SMOOTH",
+"155 308 OFFCURVE",
+"465 0 OFFCURVE",
+"855 0 CURVE SMOOTH"
+);
+}
+);
+width = 1710;
+}
+);
+leftMetricsKey = "=155";
+rightMetricsKey = "=|";
+unicode = 2B24;
+},
+{
+glyphname = blackLargeSquare;
+lastChange = "2018-10-26 01:22:12 +0000";
+layers = (
+{
+layerId = "0331963E-C1C8-4E93-A463-84B984C1D75E";
+paths = (
+{
+closed = 1;
+nodes = (
+"205 0 LINE",
+"1483 0 LINE",
+"1483 1294 LINE",
+"205 1294 LINE"
+);
+}
+);
+width = 1688;
+},
+{
+layerId = "B06AEEA2-953E-4FA5-BFB1-0445B6E4B274";
+paths = (
+{
+closed = 1;
+nodes = (
+"205 0 LINE",
+"1483 0 LINE",
+"1483 1294 LINE",
+"205 1294 LINE"
+);
+}
+);
+width = 1688;
+},
+{
+layerId = "55372407-EEEC-4390-8B77-FB5958F23D2B";
+paths = (
+{
+closed = 1;
+nodes = (
+"205 0 LINE",
+"1483 0 LINE",
+"1483 1294 LINE",
+"205 1294 LINE"
+);
+}
+);
+width = 1688;
+}
+);
+leftMetricsKey = "=blackLargeCircle+50";
+rightMetricsKey = "=|";
+unicode = 2B1B;
+},
+{
 glyphname = objectReplacementCharacter;
 lastChange = "2018-07-30 20:18:55 +0000";
 layers = (
@@ -135675,26 +135808,22 @@ width = 973;
 );
 instances = (
 {
-exports = 0;
-customParameters = (
-{
-name = weightClass;
-value = 250;
-}
-);
-interpolationWeight = 54;
-instanceInterpolations = {
-"0331963E-C1C8-4E93-A463-84B984C1D75E" = 1;
-};
-name = Thin;
-weightClass = Thin;
-},
-{
-exports = 0;
 customParameters = (
 {
 name = "Export STAT Table";
 value = 1;
+},
+{
+name = "Style Name as STAT entry";
+value = Regular;
+},
+{
+name = familyName;
+value = "Roboto Slab ISG Light";
+},
+{
+name = preferredFamilyName;
+value = "Roboto Slab ISG Light";
 }
 );
 interpolationWeight = 120;
@@ -135705,11 +135834,22 @@ instanceInterpolations = {
 name = Regular;
 },
 {
-exports = 0;
 customParameters = (
 {
 name = "Export STAT Table";
 value = 1;
+},
+{
+name = "Style Name as STAT entry";
+value = Bold;
+},
+{
+name = familyName;
+value = "Roboto Slab ISG Light";
+},
+{
+name = preferredFamilyName;
+value = "Roboto Slab ISG Light";
 }
 );
 interpolationWeight = 197;
@@ -135722,20 +135862,22 @@ name = Bold;
 weightClass = Bold;
 },
 {
-exports = 0;
-interpolationWeight = 252;
-instanceInterpolations = {
-"55372407-EEEC-4390-8B77-FB5958F23D2B" = 0.35714;
-"B06AEEA2-953E-4FA5-BFB1-0445B6E4B274" = 0.64286;
-};
-name = Medium;
-weightClass = Medium;
-},
-{
 customParameters = (
 {
 name = "Export STAT Table";
 value = 1;
+},
+{
+name = "Style Name as STAT entry";
+value = Regular;
+},
+{
+name = familyName;
+value = "Roboto Slab ISG Dark";
+},
+{
+name = preferredFamilyName;
+value = "Roboto Slab ISG Dark";
 }
 );
 interpolationWeight = 292;
@@ -135750,6 +135892,18 @@ customParameters = (
 {
 name = "Export STAT Table";
 value = 1;
+},
+{
+name = "Style Name as STAT entry";
+value = Bold;
+},
+{
+name = familyName;
+value = "Roboto Slab ISG Dark";
+},
+{
+name = preferredFamilyName;
+value = "Roboto Slab ISG Dark";
 }
 );
 interpolationWeight = 351;
